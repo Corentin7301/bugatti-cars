@@ -7,14 +7,62 @@
   <title>BUGGATI CARS</title>
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
-  <script type="module" src="./src/main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <script type="module" src="./src/js/main.js"></script>
+  <script type="module" src="./src/js/animation.js"></script>
 </head>
 
 <body>
 
-  <div class="">
+  <div x-data="{
+    veyronSuperSportName: 'Veyron Super Sport',
+    chironLegendName: 'Chiron Legend',
+    divoName: 'Divo',
+    laVoitureNoireName: 'La voiture Noire',
+    centodieciName: 'Centodieci',
+    veyronSuperSportDesc: 'la veyron 16.4 super sport a repoussé encore plus loin les limites du possible dans le secteur de l\'automobile et établi de nouveaux standards. 1200 CV, 0 à 100 km/h en 2.5s, pointe à 415 km/h',
+    chironLegendDesc: 'Avec l\'édition exclusive «Les Légendes du Ciel», BUGATTI rend hommage à la relation unique et fructueuse entre notre fondateur et les légendaires pilotes et pilotes de course français Louis Blériot, Roland Garros, Robert Benoist, Bartolomeo Costantini et Albert Divo. 1500 CV, 420 km/h',
+    divoDesc: 'Design exceptionnel, caractère saisissant, dynamique de conduite entièrement repensée, le tout en édition limitée : la Divo constitue le tout premier projet de carrosserie moderne de BUGATTI. 1500 CV, 0 à 100 km/h en 2.4s, 380 km/h',
+    laVoitureNoireDesc: 'BUGATTI rend aujourd’hui hommage à la quatrième Atlantic, une voiture noire disparue depuis la Seconde Guerre mondiale, avec un modèle souvenir par lequel la vitesse, la technique, le luxe et l\’esthétique de l\’icône entrent dans une nouvelle ère. 1500 CV, 0 à 100 km/h en 2.4s, +400 km/h',
+    centodieciDesc: 'La Centodieci vient célébrer la continuité des 110 ans de succès de Bugatti marqué par un design et des performances exceptionnels, tout en rendant hommage à l’histoire récente de la marque. 1600 CV, 0 à 100 km/h en 2.4s, 380 km/h'
+  }" class=" uppercase">
+
+    <div class="carContainer bg-darkGray bg-veyronSuperSportMobile">
+      <h2 x-text="veyronSuperSportName" class=" text-veyronSuperSportColor carNames"></h2>
+      <p x-text="veyronSuperSportDesc" class=" text-veyronSuperSportColor carDesc"></p>
+    </div>
+
+
+    <div class="carContainer bg-lightGray bg-chironLegendMobile">
+      <h2 x-text="chironLegendName" class=" text-chironLegendColor carNames"></h2>
+      <p x-text="chironLegendDesc" class=" text-chironLegendColor carDesc"></p>
+    </div>
+
+
+    <div class=" carContainer bg-darkGray bg-divoMobile">
+      <h2 x-text="divoName" class=" text-divoColor carNames"></h2>
+      <p x-text="divoDesc" class=" text-divoColor carDesc"></p>
+    </div>
+
+
+    <div class=" carContainer bg-lightGray bg-laVoitureNoireMobile">
+      <h2 x-text="laVoitureNoireName" class=" text-laVoitureNoireColor carNames"></h2>
+      <p x-text="laVoitureNoireDesc" class=" text-laVoitureNoireColor carDesc"></p>
+    </div>
+
+
+    <div class=" carContainer bg-darkGray bg-centodieciMobile">
+      <h2 x-text="centodieciName" class=" text-centodieciColor carNames"></h2>
+      <p x-text="centodieciDesc" class=" text-centodieciColor carDesc"></p>
+    </div>
     
+    
+    <div class=" carContainer bg-lightGray flex items-center justify-center">
+      <img src="./public/images/logo_buggati.png" alt="buggati">
+    </div>
   </div>
+
 
 </body>
 
