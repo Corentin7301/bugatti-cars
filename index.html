@@ -13,67 +13,49 @@
   <script type="module" src="./src/js/animation.js"></script>
 </head>
 
-<body>
+<body class=" overflow-x-hidden">
 
-<<<<<<< HEAD
-  <div x-data="{
-    veyronSuperSportName: 'Veyron Super Sport',
-    chironLegendName: 'Chiron Legend',
-    divoName: 'Divo',
-    laVoitureNoireName: 'La voiture Noire',
-    centodieciName: 'Centodieci',
-    veyronSuperSportDesc: 'la veyron 16.4 super sport a repoussé encore plus loin les limites du possible dans le secteur de l\'automobile et établi de nouveaux standards. 1200 CV, 0 à 100 km/h en 2.5s, pointe à 415 km/h',
-    chironLegendDesc: 'Avec l\'édition exclusive «Les Légendes du Ciel», BUGATTI rend hommage à la relation unique et fructueuse entre notre fondateur et les légendaires pilotes et pilotes de course français Louis Blériot, Roland Garros, Robert Benoist, Bartolomeo Costantini et Albert Divo. 1500 CV, 420 km/h',
-    divoDesc: 'Design exceptionnel, caractère saisissant, dynamique de conduite entièrement repensée, le tout en édition limitée : la Divo constitue le tout premier projet de carrosserie moderne de BUGATTI. 1500 CV, 0 à 100 km/h en 2.4s, 380 km/h',
-    laVoitureNoireDesc: 'BUGATTI rend aujourd’hui hommage à la quatrième Atlantic, une voiture noire disparue depuis la Seconde Guerre mondiale, avec un modèle souvenir par lequel la vitesse, la technique, le luxe et l\’esthétique de l\’icône entrent dans une nouvelle ère. 1500 CV, 0 à 100 km/h en 2.4s, +400 km/h',
-    centodieciDesc: 'La Centodieci vient célébrer la continuité des 110 ans de succès de Bugatti marqué par un design et des performances exceptionnels, tout en rendant hommage à l’histoire récente de la marque. 1600 CV, 0 à 100 km/h en 2.4s, 380 km/h'
-  }" class=" uppercase">
-
-    <div class="carContainer bg-darkGray">
-      <h2 x-text="veyronSuperSportName" class=" text-veyronSuperSportColor carNames"></h2>
-      <img src="./public/images/veyron-super-sport-de-mobile.png" alt="veyron" class=" car max-w-3xl">
-=======
   <div x-data="carDatas()" class=" uppercase">
 
     <div class="carContainer bg-darkGray overflow-hidden">
       <h2 x-text="veyronSuperSportName" class=" text-veyronSuperSportColor carNames"></h2>
-      <img src="./public/images/veyron-super-sport-de-mobile.png" alt="Veyron super sport" class=" car max-w-3xl">
->>>>>>> a661384 (cars animation ok)
+      <img src="./public/images/veyron-super-sport-de-mobile.png" alt="Veyron super sport" class=" car carMobile">
+      <img src="./public/images/veyron-super-sport-de.png" alt="Veyron super sport" class=" car carDesktop">
       <p x-text="veyronSuperSportDesc" class=" text-veyronSuperSportColor carDesc"></p>
     </div>
 
 
-<<<<<<< HEAD
-    <div class="carContainer bg-lightGray">
-      <h2 x-text="chironLegendName" class=" text-chironLegendColor carNames"></h2>
-      <img src="./public/images/chiron-sport-les-legendes-du-ciel-de-mobile.png" alt="chiron" class=" car max-w-3xl">
-=======
+
     <div class="carContainer bg-lightGray overflow-hidden">
       <h2 x-text="chironLegendName" class=" text-chironLegendColor carNames"></h2>
       <img src="./public/images/chiron-sport-les-legendes-du-ciel-de-mobile.png" alt="Chiron sport les légendes du ciel"
-        class=" car max-w-3xl">
->>>>>>> a661384 (cars animation ok)
+        class=" car carMobile">
+      <img src="./public/images/chiron-sport-les-legendes-du-ciel-de.png" alt="Chiron sport les légendes du ciel"
+      class=" car carDesktop">
       <p x-text="chironLegendDesc" class=" text-chironLegendColor carDesc"></p>
     </div>
 
 
     <div class=" carContainer bg-darkGray overflow-hidden">
       <h2 x-text="divoName" class=" text-divoColor carNames"></h2>
-      <img src="./public/images/divo-de-mobile.png" alt="Divo" class=" car max-w-3xl">
+      <img src="./public/images/divo-de-mobile.png" alt="Divo" class=" car carMobile">
+      <img src="./public/images/divo-de.png" alt="Divo" class=" car carDesktop">
       <p x-text="divoDesc" class=" text-divoColor carDesc"></p>
     </div>
 
 
     <div class=" carContainer bg-lightGray overflow-hidden">
       <h2 x-text="laVoitureNoireName" class=" text-laVoitureNoireColor carNames"></h2>
-      <img src="./public/images/la-voiture-noire-de-mobile.png" alt="La voiture noire" class=" car max-w-3xl">
+      <img src="./public/images/la-voiture-noire-de-mobile.png" alt="La voiture noire" class=" car carMobile">
+      <img src="./public/images/la-voiture-noire-de.png" alt="La voiture noire" class=" car carDesktop">
       <p x-text="laVoitureNoireDesc" class=" text-laVoitureNoireColor carDesc"></p>
     </div>
 
 
     <div class=" carContainer bg-darkGray overflow-hidden">
       <h2 x-text="centodieciName" class=" text-centodieciColor carNames"></h2>
-      <img src="./public/images/centodieci-de-mobile.png" alt="Centodieci" class=" car max-w-3xl">
+      <img src="./public/images/centodieci-de-mobile.png" alt="Centodieci" class=" car carMobile">
+      <img src="./public/images/centodieci-de.png" alt="Centodieci" class=" car carDesktop">
       <p x-text="centodieciDesc" class=" text-centodieciColor carDesc"></p>
     </div>
 

@@ -1,15 +1,23 @@
 .carContainer {
-    @apply relative flex items-center justify-center w-screen h-screen bg-center bg-no-repeat bg-cover p-5;
-  }
+  @apply relative flex items-center justify-center w-screen h-screen bg-center bg-no-repeat bg-cover p-5;
+}
 
-  .carNames {
-    @apply absolute top-5 left-5 font-lato font-bold text-5xl;
-  }
+.carNames {
+  @apply absolute top-5 left-5 font-lato font-bold text-5xl md:text-7xl lg:text-8xl lg:top-10 lg:left-10;
+}
 
-  .carDesc {
-    @apply absolute left-5 bottom-8 text-sm pr-5;
-  }
+.carDesc {
+  @apply absolute left-5 bottom-8 text-sm pr-5 md:text-xl lg:text-3xl lg:w-2/3 lg:left-auto;
+}
 
-  .fixedElement {
-    @apply fixed w-6 h-6 bottom-12 right-8 z-10 cursor-pointer
-  }
+.carMobile {
+  @apply max-w-3xl md:hidden;
+}
+
+.carDesktop {
+  @apply max-w-5xl hidden md:block;
+}
+
+.buggatiLogo {
+  @apply md:max-w-lg;
+}

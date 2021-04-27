@@ -21,13 +21,13 @@ gsap.utils.toArray(".carContainer").forEach(function(e) {
             scrub: 0.5,
             start: "top top",
             end: "+=200%",
-            // markers:true
+            markers:true
         }
     })
-    .from(names, {xPercent: -100, duration: 1, ease:'power2.out', stagger:0.6},0)
-    .from(desc, {xPercent: -100, duration: 1.5, ease:'power2.out', stagger:0.6},0)
-    .from(cars, {xPercent: 100, duration: 0.8, ease:'power2.out', stagger:0.6},0)
+    .from(names, {xPercent: -150, duration: 1, ease:'power2.out', stagger:0.6},0)
+    .from(cars, {xPercent: 160, duration: 0.8, ease:'power2.out', stagger:0.6},0)
+    .from(desc, {xPercent: -150, duration: 1.5, ease:'power2.out', stagger:0.6},0)
     .from(logo, {yPercent: 100, duration: 2, ease:'power2.out', stagger:0.6},0)
-    .to({}, {duration:0.5})
+    .to({}, {duration:0.3})
     
 })
