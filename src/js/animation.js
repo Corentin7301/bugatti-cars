@@ -5,6 +5,7 @@ import {
     ScrollTrigger
 } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.refresh()
 
 
 gsap.utils.toArray(".carContainer").forEach(function(e) {
@@ -22,9 +23,9 @@ gsap.utils.toArray(".carContainer").forEach(function(e) {
             // markers:true
         }
     })
-    .from(desc, {xPercent: -200, duration: 1, ease:'power2.out', stagger:0.6},0)
-    .from(cars, {xPercent: 50, duration: 1, ease:'power2.out', stagger:0.6},0)
+    .from(desc, {xPercent: -100, duration: 1.5, ease:'power2.out', stagger:0.6},0)
+    .from(cars, {xPercent: 100, duration: 0.8, ease:'power2.out', stagger:0.6},0)
     .from(names, {xPercent: -100, duration: 1, ease:'power2.out', stagger:0.6},0)
-    // .to({}, {duration:1})
+    .to({}, {duration:0.5})
     
 })

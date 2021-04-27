@@ -9,3 +9,7 @@
   .carDesc {
     @apply absolute left-5 bottom-8 text-sm pr-5;
   }
+
+  .fixedElement {
+    @apply fixed w-6 h-6 bottom-12 right-8 z-10 cursor-pointer
+  }
