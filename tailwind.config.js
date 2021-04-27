@@ -18,18 +18,6 @@ module.exports = {
       fontFamily: {
         lato: ['lato']
       },
-      backgroundImage: theme => ({
-        chironLegend: "url('./public/images/chiron-sport-les-legendes-du-ciel-de.png')",
-        chironLegendMobile: "url('./public/images/chiron-sport-les-legendes-du-ciel-de-mobile.png')",
-        veyronSuperSport: "url('./public/images/veyron-super-sport-de.png')",
-        veyronSuperSportMobile: "url('./public/images/veyron-super-sport-de-mobile.png')",
-        centodieci: "url('./public/images/centodieci-de.png')",
-        centodieciMobile: "url('./public/images/centodieci-de-mobile.png')",
-        laVoitureNoire: "url('./public/images/la-voiture-noire-de.png')",
-        laVoitureNoireMobile: "url('./public/images/la-voiture-noire-de-mobile.png')",
-        divo: "url('./public/images/divo-de.png')",
-        divoMobile: "url('./public/images/divo-de-mobile.png')"
-      })
     },
   },
   variants: {

@@ -7,23 +7,24 @@
   <meta name="description" content="Buggati cars">
   <meta property="og:title" content="Buggati cars" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://buggati-cars.netlify.app" />
-  <meta property="og:image" content="./public/images/logo_buggati.png" />
+  <meta property="og:url"
+    content="https://buggati-cars.netlify.app" />
+  <meta property="og:image" content="https://res.cloudinary.com/corentin7301/image/upload/v1619536824/buggati-cars/favicon-buggati_udiej0.jpg" />
   <meta property="og:image:width" content="740" />
   <meta property="og:image:height" content="300" />
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:site" content="@corentinperroux" />
-  <meta property="twitter:url" content="https://buggati-cars.netlify.app" />
+  <meta property="twitter:url"
+    content="https://buggati-cars.netlify.app" />
   <meta property="twitter:creator" content="@corentinperroux" />
   <meta property="twitter:title" content="Buggati cars" />
   <meta property="twitter:description" content="Buggati cars" />
-  <meta property="twitter:image" content="./public/images/logo_buggati.png" />
+  <meta property="twitter:image" content="https://res.cloudinary.com/corentin7301/image/upload/v1619536824/buggati-cars/favicon-buggati_udiej0.jpg" />
 
 
 
   <title>BUGGATI CARS</title>
-  <link rel="icon"
-    href="./public/images/favicon-buggati.jpg">
+  <link rel="icon" href="./public/images/favicon-buggati.jpg">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <script type="module" src="./src/js/main.js"></script>
@@ -38,15 +39,15 @@
       <div class=" absolute flex flex-col items-center space-y-8 text-lightGray">
         <p class=" text-2xl font-bold">scroll bottom</p>
         <svg class="w-16 h-16 animate-bounce mr-0" fill="currentColor" viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd"
-        d="M15.707 4.293a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L10 8.586l4.293-4.293a1 1 0 011.414 0zm0 6a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L10 14.586l4.293-4.293a1 1 0 011.414 0z"
-        clip-rule="evenodd"></path>
-      </svg>
-    </div>
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M15.707 4.293a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L10 8.586l4.293-4.293a1 1 0 011.414 0zm0 6a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L10 14.586l4.293-4.293a1 1 0 011.414 0z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </div>
       <h2 x-text="veyronSuperSportName" class=" text-veyronSuperSportColor carNames"></h2>
-      <img src="./public/images/veyron-super-sport-de-mobile.png" alt="Veyron super sport" class=" car carMobile">
-      <img src="./public/images/veyron-super-sport-de.png" alt="Veyron super sport" class=" car carDesktop">
+      <img :src="veyronSuperSportImageMobile" alt="Veyron super sport" class=" car carMobile">
+      <img :src="veyronSuperSportImage" alt="Veyron super sport" class=" car carDesktop">
       <p x-text="veyronSuperSportDesc" class=" text-veyronSuperSportColor carDesc"></p>
     </div>
 
@@ -54,9 +55,9 @@
 
     <div class="carContainer bg-lightGray overflow-hidden">
       <h2 x-text="chironLegendName" class=" text-chironLegendColor carNames"></h2>
-      <img src="./public/images/chiron-sport-les-legendes-du-ciel-de-mobile.png" alt="Chiron sport les légendes du ciel"
+      <img :src="chironLegendImageMobile" alt="Chiron sport les légendes du ciel"
         class=" car carMobile">
-      <img src="./public/images/chiron-sport-les-legendes-du-ciel-de.png" alt="Chiron sport les légendes du ciel"
+      <img :src="chironLegendImage" alt="Chiron sport les légendes du ciel"
         class=" car carDesktop">
       <p x-text="chironLegendDesc" class=" text-chironLegendColor carDesc"></p>
     </div>
@@ -64,30 +65,30 @@
 
     <div class=" carContainer bg-darkGray overflow-hidden">
       <h2 x-text="divoName" class=" text-divoColor carNames"></h2>
-      <img src="./public/images/divo-de-mobile.png" alt="Divo" class=" car carMobile">
-      <img src="./public/images/divo-de.png" alt="Divo" class=" car carDesktop">
+      <img :src="divoImageMobile" alt="Divo" class=" car carMobile">
+      <img :src="divoImage" alt="Divo" class=" car carDesktop">
       <p x-text="divoDesc" class=" text-divoColor carDesc"></p>
     </div>
 
 
     <div class=" carContainer bg-lightGray overflow-hidden">
       <h2 x-text="laVoitureNoireName" class=" text-laVoitureNoireColor carNames"></h2>
-      <img src="./public/images/la-voiture-noire-de-mobile.png" alt="La voiture noire" class=" car carMobile">
-      <img src="./public/images/la-voiture-noire-de.png" alt="La voiture noire" class=" car carDesktop">
+      <img :src="laVoitureNoireImageMobile" alt="La voiture noire" class=" car carMobile">
+      <img :src="laVoitureNoireImage" alt="La voiture noire" class=" car carDesktop">
       <p x-text="laVoitureNoireDesc" class=" text-laVoitureNoireColor carDesc"></p>
     </div>
 
 
     <div class=" carContainer bg-darkGray overflow-hidden">
       <h2 x-text="centodieciName" class=" text-centodieciColor carNames"></h2>
-      <img src="./public/images/centodieci-de-mobile.png" alt="Centodieci" class=" car carMobile">
-      <img src="./public/images/centodieci-de.png" alt="Centodieci" class=" car carDesktop">
+      <img :src="centodieciImageMobile" alt="Centodieci" class=" car carMobile">
+      <img :src="centodieciImage" alt="Centodieci" class=" car carDesktop">
       <p x-text="centodieciDesc" class=" text-centodieciColor carDesc"></p>
     </div>
 
 
     <div class=" carContainer relative bg-lightGray flex flex-col items-center justify-center">
-      <img src="./public/images/logo_buggati.png" alt="buggati" class=" buggatiLogo">
+      <img :src="buggatiLogo" alt="buggati" class=" buggatiLogo">
       <p class=" absolute bottom-5 right-5 md:right-10 text-sm font-semibold">© Copyright <a
           href="https://portfolio.corentinperroux.fr" target="_blank"
           class=" text-veyronSuperSportColor transition-all hover:opacity-70">CORENTIN PERROUX </a><span
@@ -110,6 +111,17 @@
         divoDesc: 'Design exceptionnel, caractère saisissant, dynamique de conduite entièrement repensée, le tout en édition limitée : la Divo constitue le tout premier projet de carrosserie moderne de BUGATTI. 1500 CV, 0 à 100 km/h en 2.4s, 380 km/h',
         laVoitureNoireDesc: 'BUGATTI rend aujourd’hui hommage à la quatrième Atlantic, une voiture noire disparue depuis la Seconde Guerre mondiale, avec un modèle souvenir par lequel la vitesse, la technique, le luxe et l\’esthétique de l\’icône entrent dans une nouvelle ère. 1500 CV, 0 à 100 km/h en 2.4s, +400 km/h',
         centodieciDesc: 'La Centodieci vient célébrer la continuité des 110 ans de succès de Bugatti marqué par un design et des performances exceptionnels, tout en rendant hommage à l’histoire récente de la marque. 1600 CV, 0 à 100 km/h en 2.4s, 380 km/h',
+        veyronSuperSportImageMobile: "https://res.cloudinary.com/corentin7301/image/upload/v1619536260/buggati-cars/veyron-super-sport-de-mobile_kast5h.png",
+        veyronSuperSportImage: "https://res.cloudinary.com/corentin7301/image/upload/v1619536258/buggati-cars/veyron-super-sport-de_ewh1jc.png",
+        chironLegendImageMobile: "https://res.cloudinary.com/corentin7301/image/upload/v1619536244/buggati-cars/chiron-sport-les-legendes-du-ciel-de-mobile_phqhuz.png",
+        chironLegendImage: "https://res.cloudinary.com/corentin7301/image/upload/v1619536242/buggati-cars/chiron-sport-les-legendes-du-ciel-de_lrqb1x.png",
+        divoImageMobile: "https://res.cloudinary.com/corentin7301/image/upload/v1619536248/buggati-cars/divo-de-mobile_xenebv.png",
+        divoImage: "https://res.cloudinary.com/corentin7301/image/upload/v1619536246/buggati-cars/divo-de_tnlgoo.png",
+        laVoitureNoireImageMobile: "https://res.cloudinary.com/corentin7301/image/upload/v1619536254/buggati-cars/la-voiture-noire-de-mobile_kzrnc4.png",
+        laVoitureNoireImage: "https://res.cloudinary.com/corentin7301/image/upload/v1619536252/buggati-cars/la-voiture-noire-de_kj8xrq.png",
+        centodieciImageMobile: "https://res.cloudinary.com/corentin7301/image/upload/v1619536240/buggati-cars/centodieci-de-mobile_t0xyqh.png",
+        centodieciImage: "https://res.cloudinary.com/corentin7301/image/upload/v1619536238/buggati-cars/centodieci-de_pl6z4t.png",
+        buggatiLogo: "https://res.cloudinary.com/corentin7301/image/upload/v1619536256/buggati-cars/logo_buggati_i7vu0e.png",
       }
     }
 
