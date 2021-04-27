@@ -17,7 +17,16 @@
 
   <div x-data="carDatas()" class=" uppercase">
 
-    <div class="carContainer bg-darkGray overflow-hidden">
+    <div class="carContainer flex-col bg-darkGray overflow-hidden">
+      <div class=" absolute flex flex-col items-center space-y-8 text-lightGray">
+        <p class=" text-2xl font-bold">scroll bottom</p>
+        <svg class="w-16 h-16 animate-bounce mr-0" fill="currentColor" viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+        d="M15.707 4.293a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L10 8.586l4.293-4.293a1 1 0 011.414 0zm0 6a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L10 14.586l4.293-4.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"></path>
+      </svg>
+    </div>
       <h2 x-text="veyronSuperSportName" class=" text-veyronSuperSportColor carNames"></h2>
       <img src="./public/images/veyron-super-sport-de-mobile.png" alt="Veyron super sport" class=" car carMobile">
       <img src="./public/images/veyron-super-sport-de.png" alt="Veyron super sport" class=" car carDesktop">
@@ -31,7 +40,7 @@
       <img src="./public/images/chiron-sport-les-legendes-du-ciel-de-mobile.png" alt="Chiron sport les légendes du ciel"
         class=" car carMobile">
       <img src="./public/images/chiron-sport-les-legendes-du-ciel-de.png" alt="Chiron sport les légendes du ciel"
-      class=" car carDesktop">
+        class=" car carDesktop">
       <p x-text="chironLegendDesc" class=" text-chironLegendColor carDesc"></p>
     </div>
 
@@ -62,7 +71,10 @@
 
     <div class=" carContainer relative bg-lightGray flex flex-col items-center justify-center">
       <img src="./public/images/logo_buggati.png" alt="buggati" class=" buggatiLogo">
-        <p class=" absolute bottom-5 right-5 md:right-10 text-sm font-semibold">© Copyright <a href="https://portfolio.corentinperroux.fr" class=" text-veyronSuperSportColor transition-all hover:opacity-70">CORENTIN PERROUX </a><span x-text="copyrightDate()"></span></p>
+      <p class=" absolute bottom-5 right-5 md:right-10 text-sm font-semibold">© Copyright <a
+          href="https://portfolio.corentinperroux.fr"
+          class=" text-veyronSuperSportColor transition-all hover:opacity-70">CORENTIN PERROUX </a><span
+          x-text="copyrightDate()"></span></p>
     </div>
   </div>
 
