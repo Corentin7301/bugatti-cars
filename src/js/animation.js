@@ -21,7 +21,7 @@ gsap.utils.toArray(".carContainer").forEach(function(e) {
             scrub: 0.5,
             start: "top top",
             end: "+=200%",
-            markers:true
+            // markers:true
         }
     })
     .from(names, {xPercent: -150, duration: 1, ease:'power2.out', stagger:0.6},0)
