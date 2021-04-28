@@ -6,10 +6,6 @@
   @apply absolute top-5 left-5 font-lato font-bold text-5xl md:text-7xl lg:text-8xl lg:top-10 lg:left-10;
 }
 
-.carDesc {
-  @apply absolute left-5 bottom-8 text-sm pr-5 md:text-xl lg:text-3xl lg:w-2/3 lg:left-auto;
-}
-
 .carMobile {
   @apply max-w-3xl md:hidden;
 }
@@ -17,6 +13,11 @@
 .carDesktop {
   @apply max-w-5xl hidden md:block;
 }
+
+.carDesc {
+  @apply absolute left-5 bottom-8 text-sm pr-5 md:text-xl lg:text-3xl lg:w-2/3 lg:left-auto;
+}
+
 
 .buggatiLogo {
   @apply md:max-w-lg;
