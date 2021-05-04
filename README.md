@@ -1,8 +1,8 @@
-# BUGGATI CARS
+# BUGATTI CARS
 
 ## Made by [Corentin PERROUX]([CorentinPERROUX](https://portfolio.corentinperroux.fr))
 
-## URL : [https://buggati-cars.netlify.app/](https://buggati-cars.netlify.app/)
+## URL : [https://bugatti-cars.netlify.app/](https://bugatti-cars.netlify.app/)
 
 ## Installation des dépendances :
 

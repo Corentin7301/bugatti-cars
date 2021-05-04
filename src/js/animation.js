@@ -12,7 +12,7 @@ gsap.utils.toArray(".carContainer").forEach(function (e) {
     let names = e.querySelectorAll(".carNames");
     let cars = e.querySelectorAll(".car");
     let desc = e.querySelectorAll(".carDesc");
-    let logo = e.querySelector(".buggatiLogo");
+    let logo = e.querySelector(".bugattiLogo");
     let firstScrollBottom = e.querySelector(".firstScrollBottom");
     
 
